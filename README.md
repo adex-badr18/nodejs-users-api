@@ -183,6 +183,3 @@ Fellow | 3MTT Nigeria
 
 If you have suggestions or want to contribute, feel free to fork this repository and open a PR.
 
----
-
-*Let me know if you'd like me to generate the sample `users` table schema for PostgreSQL or the actual backend code structure!*
