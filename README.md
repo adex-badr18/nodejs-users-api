@@ -25,7 +25,7 @@
 ### 📦 Installation
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:adex-badr18/nodejs-users-api.git
 cd express-users-api
 npm install
 ```
@@ -46,7 +46,8 @@ PORT=4000
 ### ▶️ Run the Server
 
 ```bash
-node index.js
+npm run create
+npm start
 ```
 
 The server will run on: [http://localhost:4000](http://localhost:4000)
@@ -58,7 +59,7 @@ The server will run on: [http://localhost:4000](http://localhost:4000)
 ### 🔗 Base URL
 
 ```
-http://localhost:4000/users
+http://localhost:4000/
 ```
 
 ### 🧭 Endpoints
@@ -142,8 +143,9 @@ DELETE http://localhost:4000/users/1
 
 ## ✅ Validation Rules
 
-You may integrate validation (e.g., with Joi or express-validator):
+Validation rules are set with Joi:
 
+- **id**: Required, integer, serial
 - **name**: Required, string, minimum 3 characters
 - **email**: Required, valid email format
 
