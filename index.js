@@ -1,10 +1,12 @@
 import e from "express";
 import "dotenv/config";
+import usersRoutes from "./src/routes/users.js";
 
 export const app = e();
 const PORT = process.env.PORT || 4000;
 
 app.use(e.json());
+app.use("/users", usersRoutes);
 
 app.get("/", (req, res) => {
     res.send(`
